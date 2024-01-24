@@ -10,9 +10,9 @@ class Product extends Model
     {
         //ADAPUN VALUENYA AKAN MENCETAK HTML BERDASARKAN VALUE DARI FIELD STATUS
         if ($this->status == 0) {
-            return '<span class="badge badge-secondary">Draft</span>';
+            return '<span class="badge bg-primary rounded-3 fw-semibold">Draft</span>';
         }
-        return '<span class="badge badge-success">Aktif</span>';
+        return '<span class="badge bg-success rounded-3 fw-semibold">Aktif</span>';
     }
 
     //FUNGSI YANG MENG-HANDLE RELASI KE TABLE CATEGORY

@@ -51,11 +51,11 @@
 
                             <!-- TABLE UNTUK MENAMPILKAN DATA ORDER -->
                             <div class="table-responsive">
-                                <table class="table table-hover table-bordered">
+                                <table class="table table-hover table-bordered ">
                                     <thead>
                                         <tr>
-                                            <th>InvoiceID</th>
-                                            <th>Pelanggan</th>
+                                            <th width=30>InvoiceID</th>
+                                            <th width=10>Pelanggan</th>
                                             <th>Subtotal</th>
                                             <th>Tanggal</th>
                                             <th>Status</th>
@@ -83,6 +83,7 @@
                                                     @method('DELETE')
                                                     <a href="{{ route('orders.view', $row->invoice) }}"
                                                         class="btn btn-warning btn-sm">Lihat</a>
+                                                        
                                                     <button class="btn btn-danger btn-sm">Hapus</button>
                                                 </form>
                                             </td>

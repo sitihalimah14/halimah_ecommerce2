@@ -13,8 +13,8 @@ class Payment extends Model
     public function getStatusLabelAttribute()
     {
         if ($this->status == 0) {
-            return '<span class="badge badge-secondary">Menunggu Konfirmasi</span>';
+            return '<span class="badge bg-warning rounded-3 fw-semibold">Menunggu Konfirmasi</span>';
         }
-        return '<span class="badge badge-success">Diterima</span>';
+        return '<span class="badge bg-success rounded-3 fw-semibold">Diterima</span>';
     }
 }
